@@ -1,6 +1,6 @@
 package futbol;
 
-public class Portero extends Futbolista{
+public abstract class Portero extends Futbolista{
 	private short golesRecibidos;
 	private byte dorsal;
 	public Portero(String nombre,int edad,short golesRecibidos,byte dorsal) {
@@ -30,7 +30,7 @@ public class Portero extends Futbolista{
 				" con el dorsal "+ dorsal + ". Le han marcado "+ golesRecibidos;
 	}
 	
-	public int compareTo(Futbolista p) {
+	public int compareTo(Object p) {
 		return this.golesRecibidos - ((Portero) p).golesRecibidos;
 	}
 	

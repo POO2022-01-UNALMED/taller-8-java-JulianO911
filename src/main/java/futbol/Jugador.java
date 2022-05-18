@@ -1,6 +1,6 @@
 package futbol;
 
-public class Jugador extends Futbolista {
+public abstract class Jugador extends Futbolista {
 	private short golesMarcados;
 	private byte dorsal;
 	public Jugador() {
@@ -36,8 +36,8 @@ public class Jugador extends Futbolista {
     }
 	
         
-	public int compareTo(Futbolista f) {
-		return this.getEdad() - f.getEdad();
+	public int compareTo(Object f) {
+		return this.getEdad() - ((Jugador) f).getEdad();
 	}
 	
 	public String toString() {

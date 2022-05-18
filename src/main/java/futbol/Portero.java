@@ -30,9 +30,10 @@ public class Portero extends Futbolista{
 				" con el dorsal "+ dorsal + ". Le han marcado "+ golesRecibidos;
 	}
 	
-	public int compareTo(Object p) {
-		return this.golesRecibidos - ((Portero) p).golesRecibidos;
+	public int compareTo(Object f) {
+		return Math.abs(this.golesRecibidos - ((Portero) f).golesRecibidos);
 	}
+	
 	
 	public boolean jugarConLasManos() {
 		return true;

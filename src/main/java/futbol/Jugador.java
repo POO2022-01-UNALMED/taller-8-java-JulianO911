@@ -37,7 +37,7 @@ public class Jugador extends Futbolista {
 	
         
 	public int compareTo(Object f) {
-		return this.getEdad() - ((Jugador) f).getEdad();
+		return Math.abs(this.getEdad() - ((Jugador) f).getEdad());
 	}
 	
 	public String toString() {

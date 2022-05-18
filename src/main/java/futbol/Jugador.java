@@ -1,8 +1,8 @@
 package futbol;
 
-public abstract class Jugador extends Futbolista {
-	private short golesMarcados;
-	private byte dorsal;
+public class Jugador extends Futbolista {
+	public short golesMarcados;
+	public byte dorsal;
 	public Jugador() {
 		this((short)289,(byte)7);
 	}
